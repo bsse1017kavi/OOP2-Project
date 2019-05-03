@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankPackage.Scene1aController">
+   <children>
+      <Label layoutX="74.0" layoutY="118.0" prefHeight="33.0" prefWidth="100.0" text="username">
+         <font>
+            <Font name="Cambria Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="181.0" prefHeight="33.0" prefWidth="100.0" text="password">
+         <font>
+            <Font name="Cambria Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf1" layoutX="207.0" layoutY="122.0" />
+      <PasswordField fx:id="tf2" layoutX="207.0" layoutY="185.0" />
+      <Button layoutX="182.0" layoutY="371.0" mnemonicParsing="false" onAction="#submit" prefHeight="33.0" prefWidth="100.0" text="Submit">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="74.0" layoutY="248.0" prefHeight="33.0" prefWidth="100.0" text="balance">
+         <font>
+            <Font name="Cambria Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf3" layoutX="207.0" layoutY="252.0" />
+      <Label layoutX="54.0" layoutY="35.0" prefHeight="53.0" prefWidth="378.0" text="Please fill up the required fields to create an account">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
