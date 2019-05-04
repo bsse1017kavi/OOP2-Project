@@ -24,7 +24,7 @@ public class Scene1bController
     @FXML
     PasswordField tf2;
 
-    public void submit(ActionEvent e) throws IOException
+    public void submit(ActionEvent e) throws Exception
     {
         Socket socket = new Socket("localhost",1234);
         PrintStream ps = new PrintStream(socket.getOutputStream());
@@ -43,7 +43,7 @@ public class Scene1bController
         Scene scene = new Scene(root);
 
         Scene2Controller controller = loader.getController();
-        controller.initData(tf1.getText(),balance);
+        controller.initData(tf1.getText(),balance,socket);
 
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();

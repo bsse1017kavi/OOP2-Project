@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15cca9e6-66d2-4815-b308-24ca4aa55498" name="Default Changelist" comment="improved server">
+    <list default="true" id="15cca9e6-66d2-4815-b308-24ca4aa55498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Academy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Academy/Academy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/Academy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Academy/out/production/Academy/fxPackage/StScene1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/out/production/Academy/fxPackage/StScene1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Academy/src/stScene2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/src/stScene2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bank Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene1bController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene1bController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bank Client/src/scene2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/scene2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bank Server/bankPackage/BankServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bank Server/bankPackage/BankServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bankPackage/BankServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankPackage/BankServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bankPackage/BankServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -51,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -141,10 +135,19 @@
       <option name="presentableId" value="Default" />
       <updated>1556894114904</updated>
     </task>
+    <task id="LOCAL-00001" summary="improved server">
+      <created>1556945693227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556945693227</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09381663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -155,15 +158,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -179,15 +182,27 @@
     <option name="LAST_COMMIT_MESSAGE" value="improved server" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bankPackage/BankServer.java">
+    <entry file="file://$PROJECT_DIR$/../Academy/src/fxPackage/StScene1Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        <state relative-caret-position="-628">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bankPackage/BankServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

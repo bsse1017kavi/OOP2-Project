@@ -59,13 +59,25 @@ public class BankServer
                     return account;
             }
 
+            inputStream.close();
+            fstream.close();
+
             return null;
         }catch (FileNotFoundException e)
         {
 
         }
 
+
         return null;
+    }
+
+    private void updateDatabase()throws Exception
+    {
+        FileOutputStream fileOutputStream = new FileOutputStream(file);
+        ObjectOutputStream outputStream = new ObjectOutputStream(fileOutputStream);
+
+        outputStream.writeObject(accounts);
     }
 
     private void showAccounts() throws Exception
@@ -106,7 +118,7 @@ public class BankServer
 
             packet = sc.nextLine();
 
-            System.out.println(packet);
+            //System.out.println(packet);
 
             String [] firstSplit = packet.split("~");
 
@@ -136,6 +148,31 @@ public class BankServer
                //printStream.println(account.getUsername());
                printStream.println(account.getBalance());
                //System.out.println(account);
+
+                while(true)
+                {
+                    String tPacket = sc.nextLine();
+
+                    String [] thirdSplit = tPacket.split("~");
+                    String tMode = thirdSplit[0];
+                    double ammount = Double.parseDouble(thirdSplit[1]);
+
+                    if(tMode.equals("w"))
+                    {
+                        account.withdraw(ammount);
+                    }
+
+                    else if(tMode.equals("d")) account.deposit(ammount);
+
+                    else break;
+
+                    bankServer.updateDatabase();
+
+                    //System.out.println(account.getBalance());
+
+                    printStream.println(account.getBalance());
+                }
+
             }
 
             else if(mode==3)
