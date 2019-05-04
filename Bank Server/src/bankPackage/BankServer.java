@@ -133,7 +133,9 @@ public class BankServer
                 password = secondSplit[1];
 
                Account account = bankServer.validate(username,password);
-               System.out.println(account);
+               //printStream.println(account.getUsername());
+               printStream.println(account.getBalance());
+               //System.out.println(account);
             }
 
             else if(mode==3)
@@ -145,7 +147,7 @@ public class BankServer
                 Account account = bankServer.validate(username,password);
                 boolean confirmation = false;
                 if(account!=null && account.getBalance()>=100) confirmation = true;
-                //account.withdraw(100);
+                account.withdraw(100);
                 System.out.println(confirmation);
                 printStream.println(confirmation);
                 //System.out.println(account);

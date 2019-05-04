@@ -6,14 +6,14 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxPackage.StScene2Controller">
    <children>
       <Label layoutX="235.0" layoutY="124.0" prefHeight="60.0" prefWidth="155.0" text="Certified">
          <font>
             <Font name="Cambria Bold Italic" size="36.0" />
          </font>
       </Label>
-      <Button layoutX="253.0" layoutY="271.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="107.0" text="Log out">
+      <Button layoutX="253.0" layoutY="271.0" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="107.0" text="Log out">
          <font>
             <Font name="System Italic" size="18.0" />
          </font>

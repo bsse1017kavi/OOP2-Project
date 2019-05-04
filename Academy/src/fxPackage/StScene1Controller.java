@@ -3,8 +3,13 @@ package fxPackage;
 import academyPackage.Student;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -50,6 +55,8 @@ public class StScene1Controller
             FileWriter fileWriter = new FileWriter(new File("certificate.txt"));
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
+
+
             String content = "I herby certify that Mr."+student.getPersonal().getName()+", son of Mr."+student.getPersonal().getfName()+
             "\ngraduated from my institute securing cgpa "+student.getAcademic().getCgpa()+". His conduct was satisfactory.\n\n";
 
@@ -64,6 +71,13 @@ public class StScene1Controller
             bufferedWriter.write(content);
             bufferedWriter.close();
             fileWriter.close();
+
+            Parent root = FXMLLoader.load(getClass().getResource("/stScene2.fxml"));
+            Scene scene = new Scene(root);
+
+            Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
 
         }
 

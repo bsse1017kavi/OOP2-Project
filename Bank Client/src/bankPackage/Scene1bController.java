@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Scene1bController
 {
@@ -27,6 +28,7 @@ public class Scene1bController
     {
         Socket socket = new Socket("localhost",1234);
         PrintStream ps = new PrintStream(socket.getOutputStream());
+        Scanner sc = new Scanner(socket.getInputStream());
 
         String packet = "2~";
         packet+=tf1.getText()+"`";
@@ -34,8 +36,15 @@ public class Scene1bController
 
         ps.println(packet);
 
-        Parent root = FXMLLoader.load(getClass().getResource("/scene0.fxml"));
+        double balance = sc.nextDouble();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/scene2.fxml"));
+        Parent root = loader.load();
         Scene scene = new Scene(root);
+
+        Scene2Controller controller = loader.getController();
+        controller.initData(tf1.getText(),balance);
+
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         Stage window = (Stage)((Node)e.getSource()).getScene().getWindow();
         window.setScene(scene);
