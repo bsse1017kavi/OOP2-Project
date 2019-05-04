@@ -10,6 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
+import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -52,25 +56,68 @@ public class StScene1Controller
         if(confirmation)
         {
             //System.out.println("Ok");
-            FileWriter fileWriter = new FileWriter(new File("certificate.txt"));
+
+            String fileName = "certificate.pdf";
+
+            String header = "";
+            for(int i=0;i<8;i++)header+="    ";
+            header+="Certificate";
+
+            String content = "I hereby certify that Mr."+student.getPersonal().getName()+", son of Mr."+student.getPersonal().getfName()+", ";
+            String  text = "graduated from my institute securing cgpa "+student.getAcademic().getCgpa();
+
+            String content1="His conduct was satisfactory.",content3 = "",content4 ="",content5 = "";
+
+            for(int i=0;i<100;i++)content3+=" ";
+            content3+="Director of IIT";
+            for(int i=0;i<100;i++)content4+=" ";
+            content4+="Mr.Shariful Islam";
+            for(int i=0;i<100;i++)content5+=" ";
+            content5+="Professor,Dhaka University";
+
+            PDDocument doc = new PDDocument();
+            PDPage page = new PDPage();
+
+            doc.addPage(page);
+
+            PDPageContentStream contentStream = new PDPageContentStream(doc,page);
+
+            contentStream.beginText();
+            contentStream.setFont(PDType1Font.TIMES_BOLD_ITALIC,26);
+            contentStream.setLeading(14.5f);
+            contentStream.newLineAtOffset(50,700);
+
+            contentStream.showText(header);
+            for(int i=0;i<5;i++)contentStream.newLine();
+            contentStream.setFont(PDType1Font.TIMES_ITALIC,14);
+            contentStream.showText(content);
+            contentStream.newLine();
+            contentStream.showText(text);
+            contentStream.newLine();
+            contentStream.showText(content1);
+            contentStream.newLine();;
+            contentStream.showText(content3);
+            contentStream.newLine();;
+            contentStream.showText(content4);
+            contentStream.newLine();;
+            contentStream.showText(content5);
+            contentStream.endText();
+
+            contentStream.close();
+            doc.save(fileName);
+            doc.close();
+
+            /*FileWriter fileWriter = new FileWriter(new File("certificate.txt"));
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
 
 
-            String content = "I herby certify that Mr."+student.getPersonal().getName()+", son of Mr."+student.getPersonal().getfName()+
-            "\ngraduated from my institute securing cgpa "+student.getAcademic().getCgpa()+". His conduct was satisfactory.\n\n";
 
-            for(int i=0;i<12;i++)content+="\t";
-            content+="Director of IIT\n";
-            for(int i=0;i<12;i++)content+="\t";
-            content+="Mr.Shariful Islam\n";
-            for(int i=0;i<12;i++)content+="\t";
-            content+="Professor,Dhaka University\n";
 
 
             bufferedWriter.write(content);
             bufferedWriter.close();
-            fileWriter.close();
+            fileWriter.close();*/
 
             Parent root = FXMLLoader.load(getClass().getResource("/stScene2.fxml"));
             Scene scene = new Scene(root);

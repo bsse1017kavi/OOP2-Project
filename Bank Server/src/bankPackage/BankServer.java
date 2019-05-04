@@ -185,6 +185,7 @@ public class BankServer
                 boolean confirmation = false;
                 if(account!=null && account.getBalance()>=100) confirmation = true;
                 account.withdraw(100);
+                bankServer.updateDatabase();
                 System.out.println(confirmation);
                 printStream.println(confirmation);
                 //System.out.println(account);

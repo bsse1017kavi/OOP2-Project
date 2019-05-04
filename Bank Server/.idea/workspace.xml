@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="15cca9e6-66d2-4815-b308-24ca4aa55498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Academy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Academy/out/production/Academy/fxPackage/StScene1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/out/production/Academy/fxPackage/StScene1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/src/fxPackage/StScene1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Academy/students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Academy/students.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bank Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene1bController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene1bController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/bankPackage/Scene2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bank Client/src/scene2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bank Client/src/scene2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bank Server/bankPackage/BankServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bank Server/bankPackage/BankServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bankPackage/BankServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankPackage/BankServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bankPackage/BankServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+            <state relative-caret-position="613">
+              <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -45,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -158,7 +160,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -199,8 +201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bankPackage/BankServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="120" column="14" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="14" />
+        <state relative-caret-position="613">
+          <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
         </state>
       </provider>
     </entry>
